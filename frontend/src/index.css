@@ -18,78 +18,86 @@ code {
   :root {
     --font-sans: 'Inter', sans-serif;
     --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-
-    --background: 210 100% 98%;
-    --foreground: 222 22% 20%;
-    --card: 210 100% 98%;
-    --card-foreground: 222 22% 20%;
-    --popover: 210 100% 98%;
-    --popover-foreground: 222 22% 20%;
-
-    --primary: 204 70% 72%; /* Pastel Blue */
+    
+    /* Pastel blue and orange light theme */
+    --background: 210 50% 98%;
+    --foreground: 220 20% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 20%;
+    --primary: 200 75% 65%;  /* Pastel blue */
     --primary-foreground: 0 0% 100%;
-    --secondary: 30 87% 74%; /* Pastel Orange */
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
+    --secondary: 30 100% 85%; /* Pastel orange */
+    --secondary-foreground: 30 80% 30%; 
     --muted: 210 40% 96%;
-    --muted-foreground: 0 0% 36%;
-    --accent: 204 70% 88%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 30 100% 95%;
+    --accent-foreground: 30 80% 35%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 204 70% 85%; /* Light Blue */
-    --input: 204 70% 90%;
-    --ring: 30 87% 74%; /* Pastel Orange */
-
-    --chart-1: 204 70% 72%;
-    --chart-2: 30 87% 74%;
-    --chart-3: 220 50% 65%;
-    --chart-4: 30 70% 70%;
-    --chart-5: 204 50% 60%;
-
-    --sidebar-background: 204 70% 98%;
-    --sidebar-foreground: 222 22% 30%;
-    --sidebar-primary: 204 70% 50%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 200 75% 65%;
+    
+    /* Chart colors that complement the theme */
+    --chart-1: 200 75% 65%; /* Pastel blue */
+    --chart-2: 30 100% 75%; /* Pastel orange */
+    --chart-3: 180 60% 70%; /* Complementary blue-green */
+    --chart-4: 45 90% 80%;  /* Light orange */
+    --chart-5: 220 60% 75%; /* Another blue shade */
+    
+    --radius: 0.75rem;
+    
+    /* Sidebar colors */
+    --sidebar-background: 210 50% 97%;
+    --sidebar-foreground: 220 15% 30%;
+    --sidebar-primary: 200 75% 65%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 30 87% 90%;
-    --sidebar-accent-foreground: 222 22% 30%;
-    --sidebar-border: 204 70% 75%;
-    --sidebar-ring: 30 87% 74%;
+    --sidebar-accent: 210 50% 94%;
+    --sidebar-accent-foreground: 220 15% 20%;
+    --sidebar-border: 210 30% 90%;
+    --sidebar-ring: 200 75% 65%;
   }
 
   .dark {
-    --background: 222 22% 12%;
-    --foreground: 204 70% 90%;
-    --card: 222 22% 14%;
-    --card-foreground: 204 70% 90%;
-    --popover: 222 22% 14%;
-    --popover-foreground: 204 70% 90%;
-
-    --primary: 204 70% 60%;
+    /* Darker pastel blue and orange dark theme */
+    --background: 220 30% 15%;
+    --foreground: 210 30% 95%;
+    --card: 220 25% 18%;
+    --card-foreground: 210 30% 95%;
+    --popover: 220 25% 18%;
+    --popover-foreground: 210 30% 95%;
+    --primary: 200 60% 50%;  /* Darker pastel blue */
     --primary-foreground: 0 0% 100%;
-    --secondary: 30 87% 60%;
-    --secondary-foreground: 204 70% 90%;
-
-    --muted: 222 22% 18%;
-    --muted-foreground: 204 70% 80%;
-    --accent: 204 70% 28%;
-    --accent-foreground: 204 70% 90%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 204 70% 90%;
-
-    --border: 204 70% 28%;
-    --input: 204 70% 28%;
-    --ring: 30 87% 60%;
-
-    --sidebar-background: 222 22% 10%;
-    --sidebar-foreground: 204 70% 85%;
-    --sidebar-primary: 204 70% 50%;
+    --secondary: 30 70% 55%; /* Darker pastel orange */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 25% 25%;
+    --muted-foreground: 210 20% 80%;
+    --accent: 30 50% 30%;
+    --accent-foreground: 210 30% 95%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 200 60% 50%;
+    
+    /* Dark theme chart colors */
+    --chart-1: 200 60% 50%; /* Darker pastel blue */
+    --chart-2: 30 70% 55%;  /* Darker pastel orange */
+    --chart-3: 180 50% 45%; /* Darker blue-green */
+    --chart-4: 45 60% 50%;  /* Darker orange */
+    --chart-5: 220 50% 55%; /* Another darker blue */
+    
+    /* Dark sidebar colors */
+    --sidebar-background: 220 30% 12%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 200 60% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 30 87% 50%;
-    --sidebar-accent-foreground: 204 70% 85%;
-    --sidebar-border: 204 70% 40%;
-    --sidebar-ring: 30 87% 74%;
+    --sidebar-accent: 220 25% 20%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 200 60% 50%;
   }
 }
 
@@ -102,25 +110,19 @@ code {
   }
 }
 
-/* Chat bubble styles */
-.chat-bubble {
-  @apply bg-primary text-primary-foreground rounded-lg px-4 py-2 shadow-lg;
+/* Assistant message shadow box */
+.assistant-message {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius);
+  background-color: hsl(var(--card));
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-.chat-bubble-user {
-  @apply bg-secondary text-secondary-foreground rounded-lg px-4 py-2 shadow-lg;
+/* Optional hover effect for assistant messages */
+.assistant-message:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Button Styles */
-.btn-primary {
-  @apply bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-md hover:opacity-90 transition;
-}
-
-.btn-secondary {
-  @apply bg-secondary text-secondary-foreground px-4 py-2 rounded-lg shadow-md hover:opacity-90 transition;
-}
-
-/* Loader Animation */
 @keyframes loading-shimmer {
   0% {
     background-position: -100% top;
@@ -147,7 +149,15 @@ code {
       color-stop(0.5, hsl(var(--foreground))),
       to(hsl(var(--muted)))
     );
-  background: hsl(var(--muted)) -webkit-gradient(linear, 100% 0, 0 0, from(hsl(var(--muted))), color-stop(0.5, hsl(var(--foreground))), to(hsl(var(--muted))));
+  background: hsl(var(--muted))
+    -webkit-gradient(
+      linear,
+      100% 0,
+      0 0,
+      from(hsl(var(--muted))),
+      color-stop(0.5, hsl(var(--foreground))),
+      to(hsl(var(--muted)))
+    );
   background-clip: text;
   -webkit-background-clip: text;
   background-repeat: no-repeat;
