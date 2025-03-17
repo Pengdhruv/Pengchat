@@ -21,7 +21,6 @@ export default function WaterMark() {
         gap: '8px' // Add spacing between logo and text
       }}
     >
-      <Logo width={24} height={24} /> {/* Ensure logo is displayed */}
       <div className="text-xs text-muted-foreground">
         <p>Powered by PenguinOne ♥️</p>
       </div>
